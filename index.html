@@ -4,42 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Business Promotion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <!-- header -->
-    <header>
-      <nav>
-        <a href="">Product</a>
-        <ul>
-          <li><a href="">Product</a></li>
-          <li><a href="./customers.html">Customers</a></li>
-          <li><a href="./pricing.html">Pricing</a></li>
-          <li><a href="">Resources</a></li>
+    <header class="header">
+      <div class="container">
+        <nav class="navigation">
+          <a class="logo" href="">Product</a>
+          <ul class="nav-list">
+            <li><a class="nav-link current" href="">Product</a></li>
+            <li><a class="nav-link" href="./customers.html">Customers</a></li>
+            <li><a class="nav-link" href="./pricing.html">Pricing</a></li>
+            <li><a class="nav-link" href="">Resources</a></li>
+          </ul>
+        </nav>
+        <ul class="header-list-btn">
+          <li>
+            <button class="header-btn header-btn-in" type="button">
+              Sign In
+            </button>
+          </li>
+          <li>
+            <button class="header-btn header-btn-up" type="button">
+              Sign Up
+            </button>
+          </li>
         </ul>
-      </nav>
-      <ul>
-        <li><button type="button">Sign In</button></li>
-        <li><button type="button">Sign Up</button></li>
-      </ul>
+      </div>
     </header>
     <main>
       <!-- hero -->
-      <section>
-        <h1>Work at the speed of thought</h1>
-        <p>
-          Tools, tutorials, design and innovation experts, all in one place! The
-          most intuitive way to imagine your next user experience.
-        </p>
-        <ul>
-          <li><button type="button">Get started</button></li>
-          <li><button type="button">Watch the Video</button></li>
-        </ul>
-        <img
-          src="./images/hero-img-min.png"
-          alt="people"
-          width="610"
-          height="555"
-        />
+      <section class="hero">
+        <div class="container">
+          <div class="hero-wraper">
+            <h1 class="hero-title">Work at the speed of thought</h1>
+            <p class="hero-text">
+              Tools, tutorials, design and innovation experts, all in one place!
+              The most intuitive way to imagine your next user experience.
+            </p>
+            <ul class="hero-list-btn">
+              <li>
+                <button class="hero-btn-start" type="button">
+                  Get started
+                </button>
+              </li>
+              <li>
+                <button class="hero-btn-watch" type="button">
+                  Watch the Video
+                </button>
+              </li>
+            </ul>
+          </div>
+          <img
+            src="./images/hero-img-min.png"
+            alt="people"
+            width="610"
+            height="555"
+          />
+        </div>
       </section>
       <!-- Product -->
       <section>
